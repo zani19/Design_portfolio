@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="pt-5 pb-5" id="contato">
+
+    <div class="container mb-5">
+        <h2 class="pt-3 pb-3">Contato</h2>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card p-5 shadow border-0">
+                    <div class="endereco">
+                        <h4><i class="bi bi-geo-alt">Localização:</i></h4>
+                        <p>São José dos Campos, SP</p>
+                    </div>
+
+                    <div class="email">
+                        <h4><i class="bi bi-envelope">E-mail:</i></h4>
+                        <p>thiago.zani@uol.com.br</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-7 mt-5 mt-md-0">
+                <div class="card p-5 h-100 shadow border-0">
+
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" placeholder="Digite seu nome"id="nome" name="nome">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" placeholder="Digite seu e-mail"id="email" name="email">
+                        </div>                        
+                        <div class="col-12">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea type="text" class="form-control" id="mensagem" rows="10"
+                                placeholder="Digite sua mensagem" name="mensagem"></textarea>
+                        </div>
+                        
+                        
+                        <div class="col-12 d-flex justify-content-center mt-4">
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem!</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+{% endblock %}
