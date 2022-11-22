@@ -11,7 +11,7 @@ html, body{
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient( #021124, #052856);
+    background: linear-gradient( #00060e, #021124);
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -197,3 +197,16 @@ section#main-sobre h2{
 .carousel-indicators{
     margin-bottom: -35px;
 }
+
+#btn-enviar-loader {
+    display: none;
+}
+
+#alerta-email {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+
+}
+
